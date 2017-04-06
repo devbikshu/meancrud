@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="scnApp">
+
+<head>
+    <title>Bootstrap Case</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css"> </head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <!--      <a class="navbar-brand" href="#">WebSiteName</a>--></div>
+            <ul class="nav navbar-nav">
+                <li ui-sref="home"><a href="#">Home</a></li>
+<!--
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Page 1-1</a></li>
+                        <li><a href="#">Page 1-2</a></li>
+                        <li><a href="#">Page 1-3</a></li>
+                    </ul>
+                </li>
+-->
+                <li ui-sref="employees"><a href="#">All Employees</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li ui-sref="addEmployee"><a href="#"><span class="glyphicon glyphicon-user"></span> Add Employee</a></li>
+                <li><a ui-shref=""><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div ui-view></div>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/homelogin.js"></script>
+    <!-- app js-->
+    <script src="app.js"></script>
+    <!--controller files-->
+    <script src="controllers/employees/employees.js"></script>
+    <script src="controllers/employees/employeesCtrl.js"></script>
+    <!--services files-->
+    <script src="services/employees/employee.js"></script>
+    <script src="services/employees/employeeSvc.js"></script>
+</body>
+
+</html>

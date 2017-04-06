@@ -1,0 +1,85 @@
+<form class="form-horizontal" role="form" ng-submit="addEmployee(employee)">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+            <h2>Employee Registration</h2>
+            <hr> </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 field-label-responsive">
+            <label for="name">First Name</label>
+        </div>
+        <div class="col-md- 9">
+            <div class="form-group">
+                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
+                    <input type="text" ng-model="employee.firstName" class="form-control" placeholder="First Name" required autofocus> </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 field-label-responsive">
+            <label for="name">Last Name</label>
+        </div>
+        <div class="col-md- 9">
+            <div class="form-group">
+                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
+                    <input type="text" ng-model="employee.lastName" class="form-control" placeholder="First Name" required autofocus> </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 field-label-responsive">
+            <label for="name">Address</label>
+        </div>
+        <div class="col-md- 9">
+            <div class="form-group">
+                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
+                    <input type="text" ng-model="employee.address" class="form-control" placeholder="Address" required autofocus> </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 field-label-responsive">
+            <label for="name">Salary</label>
+        </div>
+        <div class="col-md- 9">
+            <div class="form-group">
+                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
+                    <input type="text" ng-model="employee.salary" class="form-control" placeholder="Salary" required autofocus> </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 field-label-responsive">
+            <label for="name">Mobile</label>
+        </div>
+        <div class="col-md- 9">
+            <div class="form-group">
+                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
+                    <input type="text" ng-model="employee.mobile" class="form-control" placeholder="Mobile" required autofocus> </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 field-label-responsive">
+            <label for="name">Line</label>
+        </div>
+        <div class="col-md- 9">
+            <div class="form-group">
+                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
+                    <input type="text" ng-model="employee.line" class="form-control" placeholder="Line" required autofocus> </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <button type="submit" class="btn btn-success"><i class="fa fa-user-plus"></i> Register</button>
+        </div>
+    </div>
+</form>

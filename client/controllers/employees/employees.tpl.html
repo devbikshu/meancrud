@@ -1,0 +1,18 @@
+<table class="table table-bordered home-table" ng-controller="employeesCtrl">
+    <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Mobile</th>
+            <th>Line</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="scnEmployee in employees">
+            <td><a ui-sref='employee({id:scnEmployee._id})'>{{scnEmployee.firstName}}</a></td>
+            <td>{{scnEmployee.lastName}}</td>
+            <td>{{scnEmployee.mobile}}</td>
+            <td>{{scnEmployee.line}}</td>
+        </tr>
+    </tbody>
+</table>
