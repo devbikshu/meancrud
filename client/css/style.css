@@ -5,7 +5,9 @@
 .home-table td{
     text-align: center;
 }
-
+.no-padding{
+    padding: 0px;
+}
 /*home login css */
 .card-container.card {
     max-width: 350px;

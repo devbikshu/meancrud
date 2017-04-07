@@ -12,7 +12,7 @@ var scnEmployeesSchema = mongoose.Schema({
     address: {
         type: String,
     },
-    Salary: {
+    salary: {
         type: String,
         require: true
     },
